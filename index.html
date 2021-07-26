@@ -1,0 +1,862 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Appri</title>
+  <link rel="stylesheet" href="" class="fav-icon">
+<!---Bootstrap & font awesome--->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+<!---all plugins--->
+<link rel="stylesheet" href="css/jquery.mb.YTPlayer.min.css">
+<link rel="stylesheet" href="css/vendors/owl.carousel.min.css">
+<link rel="stylesheet" href="css/vendors/animate.css">
+<link rel="stylesheet" href="css/vendors/slick.css">
+<link rel="stylesheet" href="css/vendors/slick-theme.css">
+<link rel="stylesheet" href="css/uikit.min.css">
+<link rel="stylesheet" href="css/meanmenu.css">
+<link rel="stylesheet" href="css/navbar-fixed.css">
+<link rel="stylesheet" href="css/colornip.min.css">
+<link id="theme" rel="stylesheet" href="css/theme-colors/theme-default.css">
+<link rel="stylesheet" href="css/animation-line.css">
+<!---All website css--->
+  <link rel="stylesheet" href="css/default.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+  <!--[if lte IE 9]>
+     <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+   <![endif]-->
+   <div class="Switcher mt-5">
+     <button id="Switcher__control" class="Switcher__control">
+         <i class="fas fa-cogs"></i>
+     </button>
+     <h5 style="margin-bottom: 5px">Change Color</h5>
+     <ul id="colors" data-dir="css/theme-colors/">
+         <li data-scheme="theme-default" data-color="#4272d7" style="background-color:#4272d7"></li>
+         <li data-scheme="theme-red"     data-color="#fa4251" style="background-color:#fa4251"></li>
+         <li data-scheme="theme-green" data-color="#63c76a" style="background-color:#63c76a"></li>
+         <li data-scheme="theme-yellow" data-color="#ffe048" style="background-color:#ffe048"></li>
+         <li data-scheme="theme-orange" data-color="#f39c12" style="background-color:#f39c12"></li>
+     </ul>
+     <div class="Credits">
+        <span>Icon credit</span><br>
+        by <a href="" target="_blank">Hridoy</a><br>
+        from <a href="" target="_blank">Color Hunt</a><br><br>
+        2016 Colornip by <span><a href="" target="_blank">Zafree</a></span>
+       </div>
+     </div>
+<!-- Add your site or application content here -->
+<!--header--------------->
+<header id="sticky-header">
+  <div class="header-area transparent-header pt-30 pb-30">
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-2 col-lg-2 col-md-2 d-flex align-items-center">
+          <div class="logo">
+            <a href="index.html"><img src="img/logo/logo.png" alt=""></a>
+          </div>
+        </div>
+        <div class="col-xl-10 col-lg-10 col-md-10">
+          <div class="header-button f-right d-non d-lg-block" data-toggle="modal" data-target="#loginmodal">
+            <a class="btn-2" href="#">Sign In</a>
+          </div>
+          <div class="header-main-area f-right">
+            <nav id="mobile-menu">
+              <ul>
+                <li><a href="#slider-nav">Home</a>
+                  <ul class="sub-menu">
+                   <li><a href="#">List Style 1</a></li>
+                   <li><a href="#">List Style 2</a></li>
+                   <li><a href="#">List Style 3</a>
+                     <ul class="sub-menu">
+                      <li><a href="#">List Style 1</a></li>
+                      <li><a href="#">List Style 2</a></li>
+                      <li><a href="#">List Style 3</a>
+                        <ul class="sub-menu">
+                         <li><a href="#">List Style 1</a></li>
+                         <li><a href="#">List Style 2</a></li>
+                         <li><a href="#">List Style 3</a></li>
+                         <li><a href="#">List Style 4</a></li>
+                         <li><a href="#">List Style 5</a></li>
+                       </ul>
+                      </li>
+                      <li><a href="#">List Style 4</a></li>
+                      <li><a href="#">List Style 5</a></li>
+                    </ul>
+                   </li>
+                   <li><a href="#">List Style 4</a></li>
+                   <li><a href="#">List Style 5</a></li>
+                 </ul>
+                </li>
+                <li><a href="#feature-nav">Features </a></li>
+                <li><a href="#work-nav">Overview</a></li>
+                <li><a href="#price-nav">Pricing</a></li>
+                <li><a href="#screen-nav">Screenshot</a></li>
+                <li><a href="#blog-nav">News</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="mobile-menu"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal text-dark" id="loginmodal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">User Login</h5>
+          <button class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body">
+          <form action="">
+            <div class="form-group">
+              <label for="Username">Username</label>
+              <input type="text" class="form-control" placeholder="Username">
+            </div>
+            <div class="form-group">
+              <label for="Email">Email</label>
+              <input type="email" class="form-control" placeholder="Email">
+            </div>
+            <div class="form-group">
+              <label for="Password">Password</label>
+              <input type="password" class="form-control" placeholder="Password">
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button class="btn btn-warning" daa-dismiss="modal">Signin</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+<!--header end--------------->
+<main>
+<!--slider--------------->
+<div id="slider-nav" class="slider-area fix">
+  <div class="slider-active">
+    <div class="single-slider slider-height position-relative player" data-property="{videoURL:'https://youtu.be/ERZbnTEzaJo',containment:'.slider-area',autoPlay:true, mute:true, startAt:1, opacity:1}" style="background-image:url('img/background/01_home.png')">
+      <div class="shape d-none d-md-block">
+        <img class="  shape-1" src="img/shape/shape (2).png" alt="">
+        <img class="  shape-2" src="img/shape/shape (1).png" alt="">
+      </div>
+    <div class="nav-active">
+      <div class="single-nav">
+       <div class="container">
+          <div class="row">
+            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 ">
+              <div class="slider-content">
+                <h2 class="cd-headline clip is-full-width" data-   animation="fadeInLeft" data-delay=".2s">Make your life <br>
+                  <span class="cd-words-wrapper">
+                  <b class="is-visible">greater then before</b>
+                	</span>
+                 </h2>
+                <p data-animation="fadeInLeft" data-delay=".2s">Enables you to define cross-channel profiles and improve audience sessions per week.</p>
+                <div class="slider-btn" data-animation="fadeInRight" data-delay=".2s">
+                  <a class="btn-3"  href="#">Read More</a>
+                  <a class="btn-4"  href="#">LEARN More</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+              <div class="slider-phone-img position-relative d-none d-sm-block" data-animation="fadeInDown" data-delay=".2s">
+               <img src="img/phone/phone.png" class="" alt="">
+             </div>
+             <div class="phone-shape d-none d-md-block">
+               <img class="shape-3" data-animation="fadeInUp" data-delay=".1s" src="img/shape/phone (1).png" alt="">
+               <img class="shape-4" data-animation="fadeInDown" data-delay=".1s" src="img/shape/phone (2).png" alt="">
+             </div>
+            </div>
+          </div>
+       </div>
+      </div>
+      <div class="single-nav">
+       <div class="container">
+          <div class="row">
+            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 ">
+              <div class="slider-content">
+                <h2 class="cd-headline clip is-full-width" data-   animation="fadeInLeft" data-delay=".2s">Make your life <br>
+                  <span class="cd-words-wrapper">
+                  <b class="is-visible">greater then before</b>
+                	</span>
+                 </h2>
+                <p data-animation="fadeInLeft" data-delay=".2s">Enables you to define cross-channel profiles and improve audience sessions per week.</p>
+                <div class="slider-btn" data-animation="fadeInRight" data-delay=".2s">
+                  <a class="btn-3"  href="#">Read More</a>
+                  <a class="btn-4"  href="#">LEARN More</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+              <div class="slider-phone-img position-relative d-none d-sm-block" data-animation="fadeInDown" data-delay=".2s">
+               <img src="img/phone/phone.png" class="" alt="">
+             </div>
+             <div class="phone-shape d-none d-md-block">
+               <img class="shape-3" data-animation="fadeInUp" data-delay=".1s" src="img/shape/phone (1).png" alt="">
+               <img class="shape-4" data-animation="fadeInDown" data-delay=".1s" src="img/shape/phone (2).png" alt="">
+             </div>
+            </div>
+          </div>
+       </div>
+      </div>
+     </div>
+    </div>
+  </div>
+</div>
+<!--end slider--------------->
+<!--counter start--------------->
+<div class="fact-area pb-70 pt-50 fix">
+  <div class="container">
+    <div class="row">
+      <div class="col-xl-8 offset-xl-2">
+       <div class="row counter-position justify-content-around">
+         <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3">
+           <div class="single-fact text-center mb-30">
+             <h2 class="counter">40,790</h2>
+             <span>Download App</span>
+           </div>
+         </div>
+         <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3">
+           <div class="single-fact text-center mb-30">
+             <h2 class="counter">1090 </h2>
+             <span>Active Users</span>
+           </div>
+         </div>
+         <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3">
+           <div class="single-fact text-center mb-30">
+             <h2 class="counter">790</h2>
+             <span>Positive Reviews</span>
+           </div>
+         </div>
+       </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--end counterr--------------->
+<!--feature start --------------->
+<div id="feature-nav" class="feature-area position-relative text-center pb-60 fix">
+  <div class="feature-shape">
+    <img class=" fshape-1" src="img/shape/shape (4).png" alt="">
+    <img class=" fshape-2" src="img/shape/shape (3).png" alt="">
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <div class="feature-title mb-80">
+          <h2>Unique Features</h2>
+          <p>Enables you to define cross-channel profiles and improve <br>
+            audience. sessions per week</p>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+     <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4">
+       <div class="feature-icon">
+         <img src="img/feature/feature (3).png" alt="">
+       </div>
+        <div class="feature-text">
+          <h3>Easy Customize</h3>
+          <p>Enables you to define cross-channel profiles and improve audience. sessions per week </p>
+        </div>
+     </div>
+     <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4">
+       <div class="feature-icon">
+         <img src="img/feature/feature (1).png" alt="">
+       </div>
+        <div class="feature-text">
+          <h3>Retina Ready</h3>
+          <p>Enables you to define cross-channel profiles and improve audience. sessions per week </p>
+        </div>
+     </div>
+     <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4">
+       <div class="feature-icon">
+         <img src="img/feature/feature (2).png" alt="">
+       </div>
+        <div class="feature-text">
+          <h3>Free Update</h3>
+          <p>Enables you to define cross-channel profiles and improve audience. sessions per week </p>
+        </div>
+     </div>
+    </div>
+  </div>
+</div>
+<!--feature end --------------->
+<!--video mobile --------------->
+<div class="video-and-mobile pb-80 fix pt-5">
+  <div class="video-section">
+    <div class="container">
+      <div class="video-img text-center mb-80">
+        <img src="img/video/01_home.png" alt="">
+        <div class="video-content">
+        <div class="video-text">
+         <h2>Watch Video</h2>
+        </div>
+        <div class="video-icon" uk-lightbox>
+         <a href="https://youtu.be/m5W-jO3UHck">
+           <i class="fas fa-play"></i>
+         </a>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<!--workpic start --------------->
+<div id="work-nav" class="work-area text-center" >
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <div class="work-title">
+          <h2>How It Works</h2>
+          <p>Enables you to define cross-channel profiles and improve<br>audience. sessions per week</p>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+        <div class="work-imag">
+          <img src="img/phone/phn-shape (1).png" class="img-fluid" alt="">
+        </div>
+      </div>
+      <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 d-flex">
+        <div class="work-content">
+          <div class="work-text">
+            <h2>Build better managment <br>easier togothe</h2>
+            <p>Enables you to define cross-channel profiles and improve audience. sessions per week There is no one type or way in our diverse community Alienum phaedrum torquatos nec eu.</p>
+          </div>
+          <div class="work-btn">
+            <a class="btn-4" href="#">Try it Free Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--workpic start 2--------------->
+<div class="work-area text-center">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <div class="work-title hridoy">
+          <h2>How It Works</h2>
+          <p>Enables you to define cross-channel profiles and improve<br>audience. sessions per week</p>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+        <div class="work-content akash">
+          <div class="work-text">
+            <h2>Change your shedule after <br> account creating</h2>
+            <p>Enables you to define cross-channel profiles and improve audience. sessions per week There is no one type or way in our diverse community Alienum phaedrum torquatos nec eu.</p>
+          </div>
+          <div class="work-btn">
+            <a class="btn-4" href="#">Try it Free Now</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12  d-flex">
+        <div class="work-imag">
+          <img src="img/phone/phn-shape (2).png" class="img-fluid" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+ </div>
+</div>
+<!--video mobile end --------------->
+<!--priceing  --------------->
+<div id="price-nav" class="price-area pb-90 text-center">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <div class="work-title price-title">
+          <h2>Pricing Plan</h2>
+          <p>Enables you to define cross-channel profiles and improve <br>audience. sessions per week</p>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <div class="price-navication">
+         <div class="price-wrapper">
+            <ul class="nav price-tab" id="myTab" role="tablist">
+  <li class="nav-item">
+    <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Monthly</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Yearly</a>
+  </li>
+</ul>
+</div>
+<div class="tab-content" id="myTabContent">
+  <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+    <div class="row">
+      <div class="col-xl-4 col-lg-4 col-md-4">
+        <div class="main-price mb-30">
+          <div class="price-header">
+            <h5>Primary</h5>
+            <h2>$0<span class="span-3">/</span><span>mo</span></h2>
+          </div>
+          <div class="price-content">
+            <ul>
+              <li>1GB storage</li>
+              <li>1 project limit</li>
+              <li>2 contributors limit</li>
+              <li>Unlimited viewers</li>
+              <li>Team account</li>
+            </ul>
+          </div>
+          <div class="price-btn">
+            <a class="btn-5" href="#">Get Started Now</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-4 col-lg-4 col-md-4">
+        <div class="main-price mb-30 ">
+          <div class="price-header">
+            <h5>Popular</h5>
+            <h2>$10<span class="span-3">/</span><span>mo</span></h2>
+          </div>
+          <div class="price-content">
+            <ul>
+              <li>1GB storage</li>
+              <li>1 project limit</li>
+              <li>2 contributors limit</li>
+              <li>Unlimited viewers</li>
+              <li>Team account</li>
+            </ul>
+          </div>
+          <div class="price-btn active">
+            <a class="btn-5" href="#">Get Started Now</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-4 col-lg-4 col-md-4">
+        <div class="main-price mb-30">
+          <div class="price-header">
+            <h5>Popula</h5>
+            <h2>$10<span class="span-3">/</span><span>mo</span></h2>
+          </div>
+          <div class="price-content">
+            <ul>
+              <li>1GB storage</li>
+              <li>1 project limit</li>
+              <li>2 contributors limit</li>
+              <li>Unlimited viewers</li>
+              <li>Team account</li>
+            </ul>
+          </div>
+          <div class="price-btn">
+            <a class="btn-5" href="#">Get Started Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+    <div class="row">
+      <div class="col-xl-4 col-lg-4 col-md-4">
+        <div class="main-price mb-30">
+          <div class="price-header">
+            <h5>Primary</h5>
+            <h2>$12<span class="span-3">/</span><span>mo</span></h2>
+          </div>
+          <div class="price-content">
+            <ul>
+              <li>1GB storage</li>
+              <li>1 project limit</li>
+              <li>2 contributors limit</li>
+              <li>Unlimited viewers</li>
+              <li>Team account</li>
+            </ul>
+          </div>
+          <div class="price-btn">
+            <a class="btn-5" href="#">Get Started Now</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-4 col-lg-4 col-md-4">
+        <div class="main-price mb-30 ">
+          <div class="price-header">
+            <h5>Popular</h5>
+            <h2>$20<span class="span-3">/</span><span>mo</span></h2>
+          </div>
+          <div class="price-content">
+            <ul>
+              <li>1GB storage</li>
+              <li>1 project limit</li>
+              <li>2 contributors limit</li>
+              <li>Unlimited viewers</li>
+              <li>Team account</li>
+            </ul>
+          </div>
+          <div class="price-btn active">
+            <a class="btn-5" href="#">Get Started Now</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-4 col-lg-4 col-md-4">
+        <div class="main-price mb-30">
+          <div class="price-header">
+            <h5>Popula</h5>
+            <h2>$24<span class="span-3">/</span><span>mo</span></h2>
+          </div>
+          <div class="price-content">
+            <ul>
+              <li>1GB storage</li>
+              <li>1 project limit</li>
+              <li>2 contributors limit</li>
+              <li>Unlimited viewers</li>
+              <li>Team account</li>
+            </ul>
+          </div>
+          <div class="price-btn">
+            <a class="btn-5" href="#">Get Started Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+ </div>
+    </div>
+  </div>
+</div>
+  </div>
+</div>
+<!--priceing end--------------->
+<!--testimonial start --------------->
+<div class="testimonial-area test-bg pb-100 text-center">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+         <div class="test-title">
+           <h2 class="text-white">Testimonial</h2>
+         </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xl-8 offset-xl-2">
+        <div class="testimonial-active">
+          <div class="single-testimonial">
+            <div class="testimonial-text">
+              <p> Appri enables you to define cross-channel profiles and improve audience segmentation based on rules and triggers to enable perfectly timed.</p>
+              <span>Martin Hedges -<span class="span-6">CEO. Marker</span></span>
+            </div>
+          </div>
+          <div class="single-testimonial">
+            <div class="testimonial-text">
+              <p> Appri enables you to define cross-channel profiles and improve audience segmentation based on rules and triggers to enable perfectly timed.</p>
+              <span>Kazi Talat -<span class="span-6">CEO. Marker</span></span>
+            </div>
+          </div>
+          <div class="single-testimonial">
+            <div class="testimonial-text">
+              <p> Appri enables you to define cross-channel profiles and improve audience segmentation based on rules and triggers to enable perfectly timed.</p>
+              <span>Akash Islam -<span class="span-6">CEO. Marker</span></span>
+            </div>
+          </div>
+        </div>
+        <div class="image-active text-center">
+          <div class="single-img">
+            <img src="img/testimonial/testimonial.png" alt="">
+          </div>
+          <div class="single-img">
+            <img src="img/testimonial/testimonial.png" alt="">
+          </div>
+          <div class="single-img">
+            <img src="img/testimonial/testimonial.png" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--testimonial end--------------->
+<!-- screenshot start --------------->
+<div id="screen-nav" class="screenshot-area text-center pt-100">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <div class="work-title screen-title">
+          <h2>App Screenshot</h2>
+          <p>Enables you to define cross-channel profiles and improve <br>audience. sessions per week</p>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <div class="screen-img">
+          <img src="img/screen/screen.png" class="img-fluid" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- screenshot end --------------->
+<!-- accordion start--------------->
+<div class="accordion-section" style="">
+  <div class="container">
+    <div class="row">
+     <div class="col">
+      <div class="work-title accordion-title text-center">
+        <h2>App Screenshot</h2>
+        <p>Enables you to define cross-channel profiles and improve <br>audience. sessions per week</p>
+      </div>
+     </div>
+    </div>
+    <div class="row">
+      <div class="col-xl-5 col-lg-5 col-md-5">
+        <div class="accordion-img">
+          <img src="img/faq/accordion (2).png" class="img-fluid" alt="">
+        </div>
+      </div>
+      <div class="col-xl-7 col-lg-7 col-md-7">
+        <div class="faq-wrapper text-dark">
+              <div class="accordion" id="accordionExample">
+        <div class="card">
+          <div class="card-header active header-5" id="headingOne">
+            <h2 class="mb-0">
+              <a class="btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                <h2>How to Buy This?</h2>
+              </a>
+            </h2>
+          </div>
+          <div id="collapseOne" class="collapse show"  aria-labelledby="headingOne" data-parent="#accordionExample">
+            <div class="card-body">
+            Enables you to define cross-channel profiles and improve audience. sessions per week There is no one type or way in our diverse community Alienum phaedrum torquatos nec eu.
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="headingTwo">
+            <h2 class="mb-0">
+              <a class=" btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                <h2>It is refundable?</h2>
+            </a>
+            </h2>
+          </div>
+          <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+            <div class="card-body">
+                Enables you to define cross-channel profiles and improve audience. sessions per week There is no one type or way in our diverse community Alienum phaedrum torquatos nec eu.
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="headingThree">
+            <h2 class="mb-0">
+              <a class=" btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                <h2> Can i use free</h2>
+            </a>
+            </h2>
+          </div>
+          <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+            <div class="card-body">
+            Enables you to define cross-channel profiles and improve audience. sessions per week There is no one type or way in our diverse community Alienum phaedrum torquatos nec eu.
+            </div>
+          </div>
+        </div>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="brand-area text-center pt-80">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <div class="brand-title">
+            <h2>Trusted by thousands of people and <br>companies worldwide</h2>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col d-flex justify-content-around">
+      <div class="brand-active owl-carousel">
+        <div class="beand-items">
+          <img src="img/brand/brand (1).png" alt="">
+        </div>
+        <div class="beand-items">
+          <img src="img/brand/brand (2).png" alt="">
+        </div>
+        <div class="beand-items">
+          <img src="img/brand/brand (3).png" alt="">
+        </div>
+        <div class="beand-items">
+          <img src="img/brand/brand (4).png" alt="">
+        </div>
+      </div>
+    </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!---------------->
+<!--news start--------------->
+<div id="blog-nav" class="letest-blog-area  mb-80">
+  <div class="container">
+    <div class="row">
+      <div class="col-xl-6 offset-xl-3">
+        <div class="work-title text-center">
+          <h2>Latest News</h2>
+          <p>Enables you to define cross-channel profiles and improve <br>audience. sessions per week</p>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
+        <div class="latest-blog mb-30">
+          <div class="blog-img">
+            <img src="img/blog/blog (1).png" class="img-fluid" alt="">
+          </div>
+          <div class="blog-content">
+            <div class="inner-blog">
+              <div class="i-b-meta">
+                <span><i class="far fa-calendar-alt"></i>  11 Dec 2018</span>
+                <span> <i class="fas fa-user"></i> Admin</span>
+              </div>
+              <h3>Sitting proudly atop M3565 is the two-storey penthouse</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
+        <div class="latest-blog mb-30">
+          <div class="blog-img">
+            <img src="img/blog/blog (2).png" class="img-fluid" alt="">
+          </div>
+          <div class="blog-content">
+            <div class="inner-blog">
+              <div class="i-b-meta">
+                <span><i class="far fa-calendar-alt"></i>  11 Dec 2018</span>
+                <span> <i class="fas fa-user"></i> Admin</span>
+              </div>
+              <h3>Sitting proudly atop M3565 is the two-storey penthouse</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
+        <div class="latest-blog mb-30">
+          <div class="blog-img">
+            <img src="img/blog/blog (3).png" class="img-fluid" alt="">
+          </div>
+          <div class="blog-content">
+            <div class="inner-blog">
+              <div class="i-b-meta">
+                <span><i class="far fa-calendar-alt"></i>  11 Dec 2018</span>
+                <span> <i class="fas fa-user"></i> Admin</span>
+              </div>
+              <h3>Sitting proudly atop M3565 is the two-storey penthouse</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--subs start--------------->
+<div class="subscribe-area pb-80">
+  <div class="container">
+      <div class="test-bg">
+         <div class="subscribe-innrer">
+         <div class="row">
+         <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
+           <div class="subs-title">
+             <h2>Subscribe <br>Newsletter</h2>
+           </div>
+         </div>
+         <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12">
+          <div class="main-subscribe">
+            <div class="subs-form">
+              <form action="POST">
+                <input type="email" placeholder="email">
+              </form>
+            </div>
+            <div class="subs-btn">
+              <a href="#">Subscribe Now</a>
+            </div>
+          </div>
+         </div>
+        </div>
+       </div>
+     </div>
+  </div>
+</div>
+<!--available start--------------->
+<div class="available-area  pb-50">
+  <div class="container">
+    <div class="row">
+      <div class="col-xl-6 offset-xl-3 text-center ">
+        <div class="available-title ">
+          <h2>Now Available On</h2>
+        </div>
+        <div class="available-btn mb-30">
+          <a href="#">
+            <img src="img/icon/icon (2).png" alt="">
+            <span class="btn-download-text">
+              <span>Download on the</span>
+              <h4>App Store</h4>
+            </span>
+          </a>
+        </div>
+        <div class="available-btn mb-30">
+          <a href="#">
+            <img src="img/icon/icon (2).png" alt="">
+            <span class="btn-download-text">
+              <span>Download on the</span>
+              <h4>App Store</h4>
+            </span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</main>
+<!--footer start--------------->
+<footer>
+  <div class="footer-area text-center pb-40">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+         <div class="footer-content">
+           <p>2019 Copyright Appri App Landing Designed by Love . All Rights Reserved</p>
+         </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+<div>
+  <a href="#" class="goTop"><i class="fas fa-arrow-circle-up"></i></a>
+</div>
+<!-------------------------->
+<script src="js/vendor/jquery-3.4.1.min.js"></script>
+<script src="js/vendor/modernizr-3.5.0.min.js"></script>
+<!---Bootstrap---------------------->
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<!---plugins-------------------->
+<script src="js/jquery.mb.YTPlayer.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/slick.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.0/jquery.waypoints.min.js"></script>
+<script src="js/jquery.counterup.min.js"></script>
+<script src="js/uikit.min.js"></script>
+<script src="js/uikit-icons.min.js"></script>
+<script src="js/jquery.meanmenu.min.js"></script>
+<script src="js/navbar-fixed.js"></script>
+<script src="js/colornip.min.js"></script>
+<script src="js/animation-line.js"></script>
+<!---Main------------------->
+<script src="js/main.js"></script>
+</body>
+</html>

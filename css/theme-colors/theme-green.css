@@ -1,0 +1,29 @@
+/* theme-color */
+
+.sticky-menu .header-area {
+    background: #63c76a;
+}
+.slider-btn .btn-3,.slider-btn .btn-4,.work-btn .btn-4 {
+  background:#63c76a;
+}
+ .price-tab li a.active{
+	  background:#63c76a; 
+ }
+.faq-wrapper .active {
+   background:#63c76a;
+}
+.subscribe-area .test-bg {
+    background:#63c76a ;
+}
+.subs-btn a {  
+ background:#63c76a;
+}
+.faq-wrapper .card-header {
+  background: #63c76a;
+}
+.main-price .active .btn-5 {
+   background: #63c76a; 
+}
+.video-icon i {
+     background: #63c76a;
+}
